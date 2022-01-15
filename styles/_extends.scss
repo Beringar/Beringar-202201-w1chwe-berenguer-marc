@@ -1,3 +1,5 @@
+@use "variables";
+
 %inline-flex-container-wrap {
   display: inline-flex;
   flex-wrap: wrap;
