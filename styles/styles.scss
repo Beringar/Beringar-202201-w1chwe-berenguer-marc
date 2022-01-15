@@ -5,3 +5,134 @@
 body {
   margin: 0;
 }
+
+.header {
+  background-color: aqua;
+}
+
+.primary-menu {
+  &__toogle {
+  }
+  &__partners {
+    &__item {
+    }
+  }
+  //TODO: Toogle i Partners(E item)
+}
+.login-signup {
+  &__icon {
+    margin: 20px;
+  }
+  &__text {
+    margin: 20px;
+  }
+}
+
+.socials {
+  &__item {
+  }
+}
+
+.cart-bar {
+  &__icon {
+  }
+  &__count {
+  }
+}
+
+.secondary-menu {
+}
+
+.logo {
+  &__icon {
+  }
+  &__img {
+  }
+}
+
+.content-menu {
+}
+
+.button {
+}
+
+.search-bar {
+  &__input {
+  }
+  &__icon {
+  }
+}
+
+.content-card {
+  &__figure {
+  }
+  &__title {
+  }
+  &__description {
+  }
+}
+
+.main {
+  background-color: blueviolet;
+}
+
+.content-section {
+  &__icon {
+  }
+  &__title {
+  }
+}
+
+.content-grid {
+}
+
+.item {
+  &__img {
+  }
+  &__text {
+    &__title {
+    }
+    &__description {
+    }
+  }
+}
+
+.brand {
+}
+
+.delivery-info {
+}
+
+.footer {
+  background-color: brown;
+  &__copyright {
+  }
+}
+
+.socials-follow {
+  &__title {
+  }
+  &__icon {
+  }
+}
+
+.newsletter-signup {
+  &__label {
+  }
+  &__input {
+  }
+  &__input-privacy-check {
+  }
+  &__submit {
+  }
+}
+
+.about {
+}
+
+.info-link {
+  &__icon {
+  }
+  &__text {
+  }
+}
