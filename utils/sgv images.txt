@@ -1,0 +1,443 @@
+.login-signup__icon {
+    	width: 27px;
+    	height: 27px;
+    	background: url (https://www.marialunarillos.com/skin/frontend/default/newdesign2017/images/sprite.svg) 0 0 no-repeat;
+	background-position-x: 0px;
+    	background-position-y: 0px;
+    	margin: 10px;
+}
+
+.cart-bar__icon{
+	display: block;
+    	float: right;
+    	width: 50px;
+    	height: 50px;
+    	background: #FF5959;
+    	margin: 0;
+    	position: relative;
+	background: #fff url(../images/sprite.svg) -66px 10px no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: -66px;
+    	background-position-y: 10px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: rgb(255, 255, 255);
+}
+
+.search-bar__icon {
+	background: #BBB8B6 url(../images/sprite.svg) -304px 12px no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: -304px;
+    	background-position-y: 12px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: rgb(187, 184, 182);
+    	cursor: pointer;
+	float: right;
+    	width: 50px;
+    	height: 50px;
+    	text-indent: -99999px;
+}
+
+.socials__item--fb {
+	background-position-x: -4px;
+    	background-position-y: -540px;
+    	width: 25px;
+    	height: 20px;
+    	margin: 15px 7px 0;
+    	background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+	background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+    	text-indent: -3000px;
+    	display: block;
+    	text-indent: -3000px;
+}
+}
+.socials__item--tw {
+	background-position-x: -40px;
+    	background-position-y: -540px;
+	background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: 0px;
+    	background-position-y: 0px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+	width: 25px;
+    	height: 20px;
+    	margin: 15px 7px 0;
+    	background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+    	text-indent: -3000px;
+    	display: block;
+    	text-indent: -3000px;
+}
+
+.socials__item--inst {
+	background-position-x: -75px;
+    	background-position-y: -540px;
+	background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: 0px;
+    	background-position-y: 0px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+	width: 25px;
+    	height: 20px;
+    	margin: 15px 7px 0;
+    	background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+    	text-indent: -3000px
+}
+
+.socials__item--pin {
+	background-position-x: -110px;
+    	background-position-y: -540px;
+	width: 25px;
+    	height: 20px;
+    	margin: 15px 7px 0;
+    	background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+    	text-indent: -3000px;
+    	display: block;
+    	text-indent: -3000px;
+	background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: 0px;
+    	background-position-y: 0px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+}
+
+.socials__item--yt {
+	background-position-x: -180px;
+    	background-position-y: -540px;
+	width: 25px;
+    	height: 20px;
+    	margin: 15px 7px 0;
+    	background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+    	text-indent: -3000px;
+    	display: block;
+    	text-indent: -3000px;
+	background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+}
+}
+.button NOVEDADES{
+    	background: #9faa4d;
+    	padding-right: 8px;
+	display: inline-block;
+    	width: 30px;
+    	height: 30px;
+    	background: url(../images/sprite.svg) -244px 4px no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: -244px;
+    	background-position-y: 4px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: initial;
+    	content: '';
+    	float: left;
+{
+
+.button OFERTAS{
+	background: #8e789d;
+	display: inline-block;
+    	width: 30px;
+    	height: 30px;
+    	background: url(../images/sprite.svg) -274px 4px no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: -274px;
+    	background-position-y: 4px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: initial;
+    	content: '';
+    	float: left;
+}
+
+.content-card--gratis {
+	width: 85px;
+	height: 60px;
+    	background: url(../images/sprite.svg) 0 -38px no-repeat transparent;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: 0px;
+    	background-position-y: -38px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+}
+
+.content-card--24/48h {
+	width: 55px;
+	height:60px;
+    	background: url(../images/sprite.svg) -90px -38px no-repeat transparent;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: -90px;
+    	background-position-y: -38px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+}
+
+.content-card--devoluciones {
+	background-position-x: -150px;
+    	background-position-y: -107px;
+	width: 68px;
+	height: 60px;
+    	background: url(../images/sprite.svg) -150px -36px no-repeat transparent;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: -150px;
+    	background-position-y: -36px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+
+}
+
+.content-card--reembolso {
+	width: 77px;
+	height: 60px;
+    	background: url(../images/sprite.svg) -223px -38px no-repeat transparent;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: -223px;
+    	background-position-y: -38px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+}
+
+
+.info-link__icon--contacto{
+	background: url(../images/sprite.svg) 0 -207px no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: 0px;
+    	background-position-y: -207px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: initial;
+    	display: block;
+    	width: 30px;
+    	height: 31px;
+    	margin: auto;
+}
+
+.info-link__icon--sobre-nosotros{
+	background: url(../images/sprite.svg) 0 -207px no-repeat;
+    	background-image: url(../images/sprite.svg);
+    	background-position-x: 0px;
+    	background-position-y: -207px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: initial;
+    	display: block;
+    	width: 30px;
+    	height: 31px;
+    	margin: auto;
+}
+
+.info-link__icon--condiciones-de-venta{
+	background-position-x: 0px;
+    	background-position-y: -285px;
+	width: 30px;
+    	height: 31px;
+	background-image: url(../images/sprite.svg);
+    	background-position-x: 0px;
+    	background-position-y: -207px;
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: initial;
+
+}
+
+.socials-follow__icon--fb {
+	background-position-x: 0px;
+    	background-position-y: -494px;
+	display: block;
+    	width: 33px;
+    	height: 32px;
+    	background: url(../images/sprite.svg) 0 0 no-repeat transparent;
+    	background-image: url(../images/sprite.svg);
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+}
+
+.socials-follow__icon--tw {
+	background-position-x: -35px;
+    	background-position-y: -494px;
+	display: block;
+    	width: 33px;
+    	height: 32px;
+    	background: url(../images/sprite.svg) 0 0 no-repeat transparent;
+    	background-image: url(../images/sprite.svg);
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+}
+
+
+.socials-follow__icon--inst {
+	background-position-x: -70px;
+    	background-position-y: -494px;
+	display: block;
+    	width: 33px;
+    	height: 32px;
+    	background: url(../images/sprite.svg) 0 0 no-repeat transparent;
+    	background-image: url(../images/sprite.svg);
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+
+}
+
+.socials-follow__icon--pin {
+	background-position-x: -106px;
+    	background-position-y: -494px;
+	display: block;
+    	width: 33px;
+    	height: 32px;
+    	background: url(../images/sprite.svg) 0 0 no-repeat transparent;
+    	background-image: url(../images/sprite.svg);
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+}
+
+.socials-follow__icon--yt {
+	background-position-x: -176px;
+    	background-position-y: -494px;
+	width: 34px;
+	display: block;
+    	width: 33px;
+    	height: 32px;
+    	background: url(../images/sprite.svg) 0 0 no-repeat transparent;
+    	background-image: url(../images/sprite.svg);
+    	background-size: initial;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    	background-attachment: initial;
+    	background-origin: initial;
+    	background-clip: initial;
+    	background-color: transparent;
+}
+
+font: 12px/1.55 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 12px;
+    line-height: 1.55;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #67635F;
+
+.button {
+    color: #FF5959;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.button OFERTAS {
+	background: #8e789d;
+    	padding-right: 15px;
+}
+
+.primary-menu__partners__item--blue {
+
+}
+
+
+.primary-menu__partners__item--yellow{
+
+}
