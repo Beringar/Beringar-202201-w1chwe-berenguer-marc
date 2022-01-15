@@ -5,45 +5,128 @@
 body {
   margin: 0;
 }
-.cards-container {
-  @extend %inline-flex-container-wrap;
-  gap: 14px;
-  justify-content: stretch;
-  background-color: variables.$dark-background-color;
-  margin: 6rem;
-  padding: 1rem;
-  border-radius: variables.$border-radius-cards;
+
+.header {
+  background-color: aqua;
 }
 
-.card {
-  @include rounded-card(variables.$border-radius-cards);
-  font-family: Arial, Helvetica, sans-serif;
+.primary-menu {
+  //TODO: Toogle i Partners(E item)
+}
+.login-signup {
+  &__icon {
+    margin: 20px;
+  }
+  &__text {
+    margin: 20px;
+  }
+}
 
-  min-width: 100px;
+.socials {
+  &__item {
+  }
+}
 
+.cart-bar {
+  &__icon {
+  }
+  &__count {
+  }
+}
+
+.secondary-menu {
+}
+
+.logo {
+  &__icon {
+  }
+  &__img {
+  }
+}
+
+.content-menu {
+}
+
+.button {
+}
+
+.search-bar {
+  &__input {
+  }
+  &__icon {
+  }
+}
+
+.content-card {
+  &__figure {
+  }
   &__title {
-    font-size: 20px;
-    color: white;
   }
-
   &__description {
-    font-size: 16px;
-    color: white;
   }
+}
 
-  &--sounds {
-    background-color: variables.$color1;
+.main {
+  background-color: blueviolet;
+}
+
+.content-section {
+  &__icon {
   }
-
-  &--insomnia {
-    background-color: variables.$color2;
+  &__title {
   }
+}
 
-  &--children {
-    background-color: variables.$color3;
+.content-grid {
+}
+
+.item {
+  &__img {
   }
+  &__text {
+    &__title {
+    }
+    &__description {
+    }
+  }
+}
 
-  &--tips {
-    background-color: variables.$color4;
+.brand {
+}
+
+.delivery-info {
+}
+
+.footer {
+  background-color: brown;
+  &__copyright {
+  }
+}
+
+.socials-follow {
+  &__title {
+  }
+  &__icon {
+  }
+}
+
+.newsletter-signup {
+  &__label {
+  }
+  &__input {
+  }
+  &__input-privacy-check {
+  }
+  &__submit {
+  }
+}
+
+.about {
+}
+
+.info-link {
+  &__icon {
+  }
+  &__text {
   }
 }

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: aqua;
+}
+
+.login-signup__icon {
+  margin: 20px;
+}
+.login-signup__text {
+  margin: 20px;
+}
+
+.main {
+  background-color: blueviolet;
+}
+
+.footer {
+  background-color: brown;
+}
+
+/*# sourceMappingURL=styles.css.map */
