@@ -72,6 +72,29 @@ body {
 .content-grid--flex-wrap {
   flex-wrap: wrap;
 }
+.content-grid--showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "top top aside" "bottom bottom aside";
+  gap: 15px;
+}
+
+.item__img {
+  width: 100%;
+}
+.item--top {
+  grid-area: top;
+  background-color: red;
+}
+.item--bottom {
+  grid-area: bottom;
+  background-color: lime;
+}
+.item--aside {
+  grid-area: aside;
+  background-color: cyan;
+}
 
 .brand {
   height: 75px;
