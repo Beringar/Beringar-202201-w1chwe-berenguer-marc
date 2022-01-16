@@ -12,48 +12,62 @@
     <title>María Lunarillos</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <section class="primary-menu">
-          <div class="primary-menu__toggle">MENU TOGGLE BURGER</div>
-          <ul class="primary-menu__partners">
-            <li class="primary-menu__partners__item">
-              <a href="#">ML red link</a>
-            </li>
-            <li class="primary-menu__partners__item">
-              <a href="#">CT blue link</a>
-            </li>
-            <li class="primary-menu__partners__item">
-              <a href="#">MC yellow link</a>
-            </li>
-          </ul>
-          <div class="login-signup">
-            <a href="#">
-              <i class="login-signup__icon">login/signup ICON</i>
-              <p class="login-signup__text">Entra | regístrate</p></a
-            >
+    <header class="header">
+      <div class="container">
+        <section class="primary-menu row">
+          <div class="col-sm-4 d-none d-sm-block">
+            <ul class="primary-menu__partners">
+              <li class="primary-menu__partners__item">
+                <a href="#">ML red link</a>
+              </li>
+              <li class="primary-menu__partners__item">
+                <a href="#">CT blue link</a>
+              </li>
+              <li class="primary-menu__partners__item">
+                <a href="#">MC yellow link</a>
+              </li>
+            </ul>
           </div>
-          <ul class="socials">
-            <li class="socials__item">
-              <a href="#"><i>fb icon</i></a>
-            </li>
-            <li class="socials__item">
-              <a href="#"><i>tw icon</i></a>
-            </li>
-            <li class="socials__item">
-              <a href="#"><i>ig icon</i></a>
-            </li>
-            <li class="socials__item">
-              <a href="#"><i>pinterest icon</i></a>
-            </li>
-            <li class="socials__item">
-              <a href="#"><i>yt icon</i></a>
-            </li>
-          </ul>
-          <a href="#"><i class="search-icon">search icon</i></a>
-          <div class="cart-bar">
-            <a href="#"><i class="cart-bar__icon">cart icon</i></a>
-            <span class="cart-bar__count">cart count</span>
+          <div class="d-flex justify-content-between col col-sm-8">
+            <div class="d-flex container-toggle-sign-up">
+              <div class="primary-menu__toggle d-sm-none">
+                MENU TOGGLE BURGER
+              </div>
+              <div class="login-signup">
+                <a href="#">
+                  <i class="login-signup__icon">LOGIN ICON</i>
+                  <p class="login-signup__text d-none d-sm-inline">
+                    Entra | regístrate
+                  </p></a
+                >
+              </div>
+            </div>
+            <ul class="socials d-flex d-none d-sm-block">
+              <div class="d-flex">
+                <li class="socials__item">
+                  <a href="#"><i>fb icon</i></a>
+                </li>
+                <li class="socials__item">
+                  <a href="#"><i>tw icon</i></a>
+                </li>
+                <li class="socials__item">
+                  <a href="#"><i>ig icon</i></a>
+                </li>
+                <li class="socials__item">
+                  <a href="#"><i>pinterest icon</i></a>
+                </li>
+                <li class="socials__item">
+                  <a href="#"><i>yt icon</i></a>
+                </li>
+              </div>
+            </ul>
+            <div class="container-search-icon-cart-bar d-flex">
+              <a href="#"><i class="search-icon d-sm-none">search icon</i></a>
+              <div class="cart-bar d-flex">
+                <a href="#"><i class="cart-bar__icon">cart icon</i></a>
+                <span class="cart-bar__count">cart count</span>
+              </div>
+            </div>
           </div>
         </section>
         <section class="secondary-menu">
@@ -122,8 +136,10 @@
             </ul>
           </div>
         </section>
-      </header>
-      <main class="main">
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
         <section class="content-section">
           <i class="content-section__icon">Fiestas icon</i>
           <h2 class="content-section__title">Fiestas</h2>
@@ -268,9 +284,13 @@
             </li>
           </ul>
         </section>
-      </main>
-      <footer class="footer">
-        <section class="footer__top">
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <section
+          class="footer__top d-flex-column justify-content-evenly align-items-center d-sm-flex d-sm-justify-content-between"
+        >
           <div class="socials-follow">
             <h3 class="socials-follow__title">Síguenos</h3>
             <ul class="socials-follow__list">
@@ -306,7 +326,8 @@
             />
             <input type="submit" class="newsletter-signup__submit" />
           </form>
-          <ul class="about">
+          <!-- TODO: No aconsegueixo centrar la llista de icons -->
+          <ul class="about d-flex-column justify-content-end">
             <li class="info-link">
               <a href="#"
                 ><i class="info-link__icon">icon contacto</i>
@@ -332,7 +353,7 @@
             Copyright &copy; 2021 María Lunarillos
           </p>
         </section>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
