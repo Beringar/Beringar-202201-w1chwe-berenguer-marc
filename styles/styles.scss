@@ -37,6 +37,7 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 }
 
 .socials {
+  list-style-type: none;
   &__item {
   }
 }
@@ -182,7 +183,22 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 }
 
 .socials-follow {
+  &__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    @media (min-width: 576px) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
   &__title {
+    display: flex;
+    justify-content: center;
+    @media (min-width: 576px) {
+      justify-content: flex-start;
+    }
   }
   &__icon {
   }
@@ -207,6 +223,7 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 }
 
 .about {
+  list-style-type: none;
 }
 
 .info-link {
