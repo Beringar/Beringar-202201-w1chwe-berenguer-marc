@@ -6,7 +6,7 @@ NOTE: Marc, if a component is not listed here, it has no background-color */
 /* background colors
 NOTE: Marc, if a component is not listed here, it has no background-color */
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font: 12px/1.55 "Source Sans Pro", sans-serif;
   color: #67635f;
   margin: 0;
   padding: 0;
@@ -79,11 +79,18 @@ body {
   background-color: #e8e6e5;
 }
 
-.footer {
+.footer__top {
   background-color: #f8f8f8;
 }
-.footer__copyright {
+.footer__bottom {
   background-color: #ff5959;
+}
+.footer__copyright {
+  text-align: center;
+  color: #fff;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

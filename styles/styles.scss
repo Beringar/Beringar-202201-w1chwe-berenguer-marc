@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap");
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font: 12px/1.55 "Source Sans Pro", sans-serif;
   color: variables.$default-text-color;
   margin: 0;
   padding: 0;
@@ -154,9 +154,18 @@ body {
 }
 
 .footer {
-  background-color: variables.$background-color-light;
-  &__copyright {
+  &__top {
+    background-color: variables.$background-color-light;
+  }
+  &__bottom {
     background-color: variables.$accent-color;
+  }
+  &__copyright {
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
   }
 }
 
