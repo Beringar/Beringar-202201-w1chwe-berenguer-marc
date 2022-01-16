@@ -80,6 +80,11 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 
 .brand {
   height: 75px;
+  margin: 15px;
+  filter: grayscale(100%);
+}
+.brand:hover {
+  filter: none;
 }
 
 .delivery-info {
