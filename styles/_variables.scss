@@ -1,5 +1,5 @@
 // text
-$default-text-color: #67635f;
+$default-text-color: #67625f;
 $text-headings-color: #2e2925; // components/elements: content-section__title
 
 //borders
@@ -11,8 +11,8 @@ $accent-color: #ff5959;
 $color1: #9faa4d;
 $color2: #8e789d;
 
-/* background colors
-NOTE: Marc, if a component is not listed here, it has no background-color */
+// background-colors
+
 $background-color-light: #f8f8f8; // components: primary-menu, footer__top, content-section
 $background-color-medium: #e8e6e5; // components: delivery-info
 $background-color-dark: #bbb8b6; // components: search-icon
