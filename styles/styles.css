@@ -12,25 +12,24 @@ body {
   background-color: #f8f8f8;
 }
 .primary-menu__partners__item--first {
-  background: url(/assets/images/maria-lunarillos.png) #ff5959 bottom center no-repeat;
+  background: url(../assets/images/maria-lunarillos.png) #ff5959 bottom center no-repeat;
 }
 .primary-menu__partners__item--second {
-  background: url(/assets/images/cucute.png) #6199af bottom center no-repeat;
+  background: url(../assets/images/cucute.png) #6199af bottom center no-repeat;
 }
 .primary-menu__partners__item--third {
-  background: url(/assets/images/mumuchu.png) #f6b436 bottom center no-repeat;
+  background: url(../assets/images/mumuchu.png) #f6b436 bottom center no-repeat;
 }
 
 .login-signup__icon {
   width: 27px;
   height: 27px;
-  background: url(/assets/images/sprite.svg) 0 0 no-repeat;
-  background-image: url(/assets/images/sprite.svg);
+  background: url(../assets/images/sprite.svg) 0 0 no-repeat;
+  background-image: url(../assets/images/sprite.svg);
   background-position-x: 0px;
   background-position-y: 0px;
   background-size: initial;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
+  background-repeat: no-repeat;
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
@@ -43,26 +42,24 @@ body {
 .socials__item {
   width: 25px;
   height: 20px;
-  background-image: url(/assets/images/sprite.svg);
+  margin: 15px 7px 0;
+  background: url(../assets/images/sprite.svg) transparent 0 0 no-repeat;
+  display: block;
 }
 .socials__item--fb {
-  background-position-x: -4px;
-  background-position-y: -540px;
-  background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+  background-position: -4px -540px;
 }
 .socials__item--tw {
-  background-position-x: -40px;
-  background-position-y: -540px;
-  background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+  background-position: -40px -540px;
 }
 .socials__item--ins {
-  background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
   background-position: -75px -540px;
 }
 .socials__item--pin {
-  background: url(../images/sprite.svg) transparent 0 0 no-repeat;
-  background-position-x: -110px;
-  background-position-y: -540px;
+  background-position: -110px -540px;
+}
+.socials__item--yt {
+  background-position: -180px -540px;
 }
 
 .search-icon {
@@ -77,8 +74,8 @@ body {
   background: #ff5959;
   margin: 0;
   position: relative;
-  background: #fff url(/assets/images/sprite.svg) -66px 10px no-repeat;
-  background-image: url(/assets/images/sprite.svg);
+  background: #fff url(../assets/images/sprite.svg) -66px 10px no-repeat;
+  background-image: url(../assets/images/sprite.svg);
   background-position-x: -66px;
   background-position-y: 10px;
   background-size: initial;
@@ -87,6 +84,12 @@ body {
   background-clip: initial;
   background-color: white;
 }
+.content-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .button {
   width: 130px;
   background: #ff5959;
@@ -115,8 +118,8 @@ body {
 }
 
 .search-bar__icon {
-  background: #bbb8b6 url(/assets/images/sprite.svg) -304px 12px no-repeat;
-  background-image: url(/assets/images/sprite.svg);
+  background: #bbb8b6 url(../assets/images/sprite.svg) -304px 12px no-repeat;
+  background-image: url(../assets/images/sprite.svg);
   background-position-x: -304px;
   background-position-y: 12px;
   background-size: initial;
@@ -131,17 +134,39 @@ body {
   text-indent: -99999px;
 }
 
-.content-card__figure {
-  height: 27px;
-  width: 27px;
+.content-menu__cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.content-card {
+  padding: 0 5px 0 0;
+  width: 80px;
+  height: 80px;
+  background-color: #f2f2f2;
+  padding: 0;
 }
 .content-card__figure {
-  height: 80px;
-  width: 80px;
+  width: 50%;
 }
-.content-card__figure--menu {
+.content-card__figure--blog {
   width: 80px;
   height: 80px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/menu.svg);
+  background-position: -320px 0;
+  background-size: 560px;
+}
+.content-card__title {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #2e2925;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .content-section {
