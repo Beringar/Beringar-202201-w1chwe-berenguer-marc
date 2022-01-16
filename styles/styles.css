@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap");
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font: 12px/1.55 "Source Sans Pro", sans-serif;
+  color: #67635f;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -74,11 +75,18 @@ body {
   background-color: #e8e6e5;
 }
 
-.footer {
+.footer__top {
   background-color: #f8f8f8;
 }
-.footer__copyright {
+.footer__bottom {
   background-color: #ff5959;
+}
+.footer__copyright {
+  text-align: center;
+  color: #fff;
+  height: 50px;
+  font-size: 14px;
+  line-height: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
