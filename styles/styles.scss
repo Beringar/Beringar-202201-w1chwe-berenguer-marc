@@ -58,6 +58,8 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 }
 
 .button {
+  &__view-more {
+  }
 }
 
 .search-bar {
@@ -88,6 +90,8 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 }
 
 .content-grid {
+  display: flex;
+  justify-content: center;
 }
 
 .item {
