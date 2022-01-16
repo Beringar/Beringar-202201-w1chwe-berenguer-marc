@@ -227,16 +227,38 @@ body {
   &--flex-wrap {
     flex-wrap: wrap;
   }
+  &--showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "top top aside"
+      "bottom bottom aside";
+    gap: 15px;
+  }
 }
 
 .item {
   &__img {
+    width: 100%;
   }
   &__text {
     &__title {
     }
     &__description {
     }
+  }
+  &--top {
+    grid-area: top;
+    background-color: red;
+  }
+  &--bottom {
+    grid-area: bottom;
+    background-color: lime;
+  }
+  &--aside {
+    grid-area: aside;
+    background-color: cyan;
   }
 }
 
