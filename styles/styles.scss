@@ -6,14 +6,18 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  color: variables.$default-text-color;
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header {
-  background-color: aqua;
 }
 
 .primary-menu {
+  background-color: variables.$background-color-light;
   &__toogle {
   }
   &__partners {
@@ -37,6 +41,10 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
   }
 }
 
+.search-icon {
+  background-color: variables.$background-color-dark;
+}
+
 .cart-bar {
   &__icon {
   }
@@ -58,6 +66,30 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 }
 
 .button {
+  width: 130px;
+  background: variables.$accent-color;
+  padding: 15px 30px;
+  display: inline-block;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  &--content-menu {
+    width: 130px;
+    padding: 0 8px 0 0;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 30px;
+    text-align: center;
+  }
+  &--col1 {
+    background-color: variables.$color1;
+  }
+  &--col2 {
+    background-color: variables.$color2;
+  }
 }
 
 .search-bar {
@@ -77,13 +109,27 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 }
 
 .main {
-  background-color: blueviolet;
 }
 
 .content-section {
+  background-color: variables.$background-color-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__icon {
   }
   &__title {
+    display: inline-block;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 22px;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    color: variables.$text-headings-color;
+    border-top: 2px solid variables.$dark-border-color;
+    border-bottom: 2px solid variables.$dark-border-color;
   }
 }
 
@@ -105,11 +151,13 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 }
 
 .delivery-info {
+  background-color: variables.$background-color-medium;
 }
 
 .footer {
-  background-color: brown;
+  background-color: variables.$background-color-light;
   &__copyright {
+    background-color: variables.$accent-color;
   }
 }
 

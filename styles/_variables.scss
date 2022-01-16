@@ -1,5 +1,18 @@
+// text
+$default-text-color: #67635f;
+$text-headings-color: #2e2925; // components/elements: content-section__title
+
+//borders
+$default-border-color: #67625f;
+$dark-border-color: #2e2925; // components/el: content-section__title
+
+// base colors
 $accent-color: #ff5959;
-$color1: #44a24c;
-$color2: #6032c9;
-$dark-background-color: #666666;
-$light-background-color: #c2c2c2;
+$color1: #9faa4d;
+$color2: #8e789d;
+
+/* background colors
+NOTE: Marc, if a component is not listed here, it has no background-color */
+$background-color-light: #f8f8f8; // components: primary-menu, footer, content-section
+$background-color-medium: #e8e6e5; // components: delivery-info
+$background-color-dark: #bbb8b6; // components: search-icon
