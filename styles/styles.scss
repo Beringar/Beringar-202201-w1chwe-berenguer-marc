@@ -23,15 +23,15 @@ body {
   &__partners {
     &__item {
       &--first {
-        background: url(/assets/images/maria-lunarillos.png) #ff5959 bottom
+        background: url(../assets/images/maria-lunarillos.png) #ff5959 bottom
           center no-repeat;
       }
       &--second {
-        background: url(/assets/images/cucute.png) #6199af bottom center
+        background: url(../assets/images/cucute.png) #6199af bottom center
           no-repeat;
       }
       &--third {
-        background: url(/assets/images/mumuchu.png) #f6b436 bottom center
+        background: url(../assets/images/mumuchu.png) #f6b436 bottom center
           no-repeat;
       }
     }
@@ -42,13 +42,12 @@ body {
   &__icon {
     width: 27px;
     height: 27px;
-    background: url(/assets/images/sprite.svg) 0 0 no-repeat;
-    background-image: url(/assets/images/sprite.svg);
+    background: url(../assets/images/sprite.svg) 0 0 no-repeat;
+    background-image: url(../assets/images/sprite.svg);
     background-position-x: 0px;
     background-position-y: 0px;
     background-size: initial;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -64,26 +63,23 @@ body {
   &__item {
     width: 25px;
     height: 20px;
-    background-image: url(/assets/images/sprite.svg);
-
+    margin: 15px 7px 0;
+    background: url(../assets/images/sprite.svg) transparent 0 0 no-repeat;
+    display: block;
     &--fb {
-      background-position-x: -4px;
-      background-position-y: -540px;
-      background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+      background-position: -4px -540px;
     }
     &--tw {
-      background-position-x: -40px;
-      background-position-y: -540px;
-      background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+      background-position: -40px -540px;
     }
     &--ins {
-      background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
       background-position: -75px -540px;
     }
     &--pin {
-      background: url(../images/sprite.svg) transparent 0 0 no-repeat;
-      background-position-x: -110px;
-      background-position-y: -540px;
+      background-position: -110px -540px;
+    }
+    &--yt {
+      background-position: -180px -540px;
     }
   }
 }
@@ -101,8 +97,8 @@ body {
     background: #ff5959;
     margin: 0;
     position: relative;
-    background: #fff url(/assets/images/sprite.svg) -66px 10px no-repeat;
-    background-image: url(/assets/images/sprite.svg);
+    background: #fff url(../assets/images/sprite.svg) -66px 10px no-repeat;
+    background-image: url(../assets/images/sprite.svg);
     background-position-x: -66px;
     background-position-y: 10px;
     background-size: initial;
@@ -126,6 +122,9 @@ body {
 }
 
 .content-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .button {
@@ -159,8 +158,8 @@ body {
   &__input {
   }
   &__icon {
-    background: #bbb8b6 url(/assets/images/sprite.svg) -304px 12px no-repeat;
-    background-image: url(/assets/images/sprite.svg);
+    background: #bbb8b6 url(../assets/images/sprite.svg) -304px 12px no-repeat;
+    background-image: url(../assets/images/sprite.svg);
     background-position-x: -304px;
     background-position-y: 12px;
     background-size: initial;
@@ -176,23 +175,39 @@ body {
   }
 }
 
-.content-card {
-  &__figure {
-    height: 27px;
-    width: 27px;
-  }
-  &__title {
-  }
-  &__description {
-  }
+.content-menu__cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.content-card__figure {
-  height: 80px;
+.content-card {
+  padding: 0 5px 0 0;
   width: 80px;
-  &--menu {
-    width: 80px;
-    height: 80px;
+  height: 80px;
+  background-color: variables.$background-menu-card;
+  padding: 0;
+  &__figure {
+    width: 50%;
+
+    &--blog {
+      width: 80px;
+      height: 80px;
+      display: block;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/menu.svg);
+      background-position: -320px 0;
+      background-size: 560px;
+    }
+  }
+  &__title {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: variables.$dark-border-color;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }
 
