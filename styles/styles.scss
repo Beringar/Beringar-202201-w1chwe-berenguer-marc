@@ -21,12 +21,14 @@ body {
     }
   }
 }
+
+/* TODO: Marc, he borrado los margins 20px de los elementos de .login-signup.
+ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
+
 .login-signup {
   &__icon {
-    margin: 20px;
   }
   &__text {
-    margin: 20px;
   }
 }
 

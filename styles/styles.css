@@ -8,13 +8,8 @@ body {
   background-color: aqua;
 }
 
-.login-signup__icon {
-  margin: 20px;
-}
-.login-signup__text {
-  margin: 20px;
-}
-
+/* TODO: Marc, he borrado los margins 20px de los elementos de .login-signup.
+ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 .main {
   background-color: blueviolet;
 }
