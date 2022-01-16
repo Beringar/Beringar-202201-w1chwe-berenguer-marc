@@ -183,9 +183,7 @@
       <section class="content-section d-none d-sm-flex flex-column">
         <div class="container">
           <h2 class="content-section__title">Nuestras marcas</h2>
-          <div
-            class="content-grid content-grid--flex-wrap d-flex justify-content-center flex-wrap"
-          >
+          <div class="content-grid content-grid--flex-wrap">
             <article>
               <a href="#"><img src="#" alt="brand 1 logo" class="brand" /> </a>
             </article>
@@ -298,9 +296,9 @@
     <footer class="footer">
       <section class="footer__top">
         <div
-          class="container d-flex flex-column align-content-around align-items-center flex-sm-row justify-content-sm-between"
+          class="container d-flex flex-column align-content-around align-items-center flex-sm-row"
         >
-          <div class="socials-follow">
+          <div class="socials-follow col-sm-4">
             <h3 class="socials-follow__title">Síguenos</h3>
             <ul class="socials-follow__list">
               <li class="socials-follow__item">
@@ -320,23 +318,39 @@
               </li>
             </ul>
           </div>
-          <form class="newsletter-signup">
-            <label for="user_email" class="newsletter-signup__label"
-              >Recibe las novedades en tu mail</label
-            >
-            <input
-              id="user_email"
-              type="email"
-              class="newsletter-signup__input"
-            />
-            <input
-              type="checkbox"
-              class="newsletter-signup__input-privacy-check"
-            />
-            <input type="submit" class="newsletter-signup__submit" />
+          <form
+            class="newsletter-signup col-sm-4 d-flex flex-column flex-sm-row"
+          >
+            <div>
+              <label for="user_email" class="newsletter-signup__label"
+                >Recibe las novedades en tu mail</label
+              >
+              <input
+                id="user_email"
+                type="email"
+                class="newsletter-signup__input"
+              />
+              <div>
+                <input
+                  type="checkbox"
+                  id="privacy-check"
+                  class="newsletter-signup__input-privacy-check"
+                />
+                <label
+                  for="privacy-check"
+                  class="newsletter-signup__input-privacy-check"
+                >
+                  Acepto la politica de privacidad
+                  <!-- TODO: Afegir link -->
+                </label>
+              </div>
+            </div>
+            <div>
+              <input type="submit" class="newsletter-signup__submit" />
+            </div>
           </form>
           <!-- TODO: No aconsegueixo centrar la llista de icons -->
-          <ul class="about d-flex flex-column justify-content-end">
+          <ul class="about d-flex flex-column justify-content-end col-sm-4">
             <li class="info-link">
               <a href="#"
                 ><i class="info-link__icon">icon contacto</i>
