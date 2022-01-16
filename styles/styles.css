@@ -1,10 +1,5 @@
-/* background colors
-NOTE: Marc, if a component is not listed here, it has no background-color */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap");
-/* background colors
-NOTE: Marc, if a component is not listed here, it has no background-color */
-/* background colors
-NOTE: Marc, if a component is not listed here, it has no background-color */
+
 body {
   font: 12px/1.55 "Source Sans Pro", sans-serif;
   color: #67635f;
@@ -17,6 +12,7 @@ body {
 .primary-menu {
   background-color: #f8f8f8;
 }
+
 .login-signup__icon {
   margin: 20px;
 }
