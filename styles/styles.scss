@@ -151,6 +151,11 @@ body {
 
 .brand {
   height: 75px;
+  margin: 15px;
+  filter: grayscale(100%);
+  &:hover {
+    filter: none;
+  }
 }
 
 .delivery-info {

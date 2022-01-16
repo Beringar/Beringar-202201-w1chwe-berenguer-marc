@@ -72,6 +72,11 @@ body {
 
 .brand {
   height: 75px;
+  margin: 15px;
+  filter: grayscale(100%);
+}
+.brand:hover {
+  filter: none;
 }
 
 .delivery-info {
