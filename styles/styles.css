@@ -74,6 +74,13 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
   display: flex;
   justify-content: center;
 }
+.content-grid--flex-wrap {
+  flex-wrap: wrap;
+}
+
+.brand {
+  height: 75px;
+}
 
 .delivery-info {
   background-color: #e8e6e5;
@@ -91,6 +98,17 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
   height: 50px;
   font-size: 14px;
   line-height: 50px;
+}
+
+.newsletter-signup {
+  border-top: 1px solid red;
+  padding: 40px;
+}
+@media (min-width: 576px) {
+  .newsletter-signup {
+    border-top: none;
+    border-left: 1px solid red;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
