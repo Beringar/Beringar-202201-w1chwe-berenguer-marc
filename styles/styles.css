@@ -1,5 +1,10 @@
+/* background colors
+NOTE: Marc, if a component is not listed here, it has no background-color */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap");
-
+/* background colors
+NOTE: Marc, if a component is not listed here, it has no background-color */
+/* background colors
+NOTE: Marc, if a component is not listed here, it has no background-color */
 body {
   font: 12px/1.55 "Source Sans Pro", sans-serif;
   color: #67635f;
@@ -12,14 +17,8 @@ body {
 .primary-menu {
   background-color: #f8f8f8;
 }
-
-.login-signup__icon {
-  margin: 20px;
-}
-.login-signup__text {
-  margin: 20px;
-}
-
+/* TODO: Marc, he borrado los margins 20px de los elementos de .login-signup.
+ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 .search-icon {
   background-color: #bbb8b6;
 }
@@ -69,6 +68,11 @@ body {
   color: #2e2925;
   border-top: 2px solid #2e2925;
   border-bottom: 2px solid #2e2925;
+}
+
+.content-grid {
+  display: flex;
+  justify-content: center;
 }
 
 .delivery-info {
