@@ -175,6 +175,9 @@ body {
       flex-direction: column;
       align-items: center;
       padding: 40px 0;
+      &:hover {
+        color: variables.$accent-color;
+      }
     }
 
     &__title {
@@ -214,6 +217,22 @@ body {
         width: 77px;
         background: url(../assets/images/sprite.svg) -223px -38px no-repeat
           transparent;
+      }
+    }
+    &:hover {
+      .delivery-grid__item__figure {
+        &--truck {
+          background-position: 0 -109px;
+        }
+        &--clock {
+          background-position: -90px -109px;
+        }
+        &--package {
+          background-position: -150px -107px;
+        }
+        &--card {
+          background-position: -223px -109px;
+        }
       }
     }
   }
