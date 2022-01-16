@@ -354,47 +354,47 @@
       </section>
       <section class="delivery-info">
         <div class="container">
-          <ul class="content-menu__cards">
-            <li class="content-card content-card--delivery-info">
+          <ul class="delivery-grid row">
+            <li class="delivery-grid__item col-6 col-sm-3">
               <a href="#">
-                <figure class="content-card__figure">
-                  <img src="#" alt="gratis img" />
-                </figure>
-                <h3 class="content-card__title">envío gratis</h3>
-                <h4 class="content-card__description">
-                  descripción envió gratis...
+                <figure
+                  class="delivery-grid__item__figure delivery-grid__item__figure--truck"
+                ></figure>
+                <h3 class="delivery-grid__item__title">envío gratis</h3>
+                <h4 class="delivery-grid__item__description">
+                  Pedidos superiores a 49€
                 </h4>
               </a>
             </li>
-            <li class="content-card content-card--delivery-info">
+            <li class="delivery-grid__item col-6 col-sm-3">
               <a href="#">
-                <figure class="content-card__figure">
-                  <img src="#" alt="24/48h img" />
-                </figure>
-                <h3 class="content-card__title">24/48h</h3>
-                <h4 class="content-card__description">descripción 24/48h...</h4>
-              </a>
-            </li>
-            <li class="content-card content-card--delivery-info">
-              <a href="#">
-                <figure class="content-card__figure">
-                  <img src="#" alt="devoluciones img" />
-                </figure>
-                <h3 class="content-card__title">Devoluciones</h3>
-                <h4 class="content-card__description">
-                  descripción devoluciones...
+                <figure
+                  class="delivery-grid__item__figure delivery-grid__item__figure--clock"
+                ></figure>
+                <h3 class="delivery-grid__item__title">Envío 24-48 horas</h3>
+                <h4 class="delivery-grid__item__description">
+                  Haz tu pedido antes de las 18:00h
                 </h4>
               </a>
             </li>
-            <li class="content-card content-card--delivery-info">
+            <li class="delivery-grid__item col-6 col-sm-3">
               <a href="#">
-                <figure class="content-card__figure">
-                  <img src="#" alt="reembolso img" />
-                </figure>
-                <h3 class="content-card__title">Reembolso</h3>
-                <h4 class="content-card__description">
-                  descripción reembolso...
+                <figure
+                  class="delivery-grid__item__figure delivery-grid__item__figure--package"
+                ></figure>
+                <h3 class="delivery-grid__item__title">Devoluciones</h3>
+                <h4 class="delivery-grid__item__description">
+                  30 días para devolver tu compra
                 </h4>
+              </a>
+            </li>
+            <li class="delivery-grid__item col-6 col-sm-3">
+              <a href="#">
+                <figure
+                  class="delivery-grid__item__figure delivery-grid__item__figure--card"
+                ></figure>
+                <h3 class="delivery-grid__item__title">Contrareembolso</h3>
+                <h4 class="delivery-grid__item__description">sin comisión</h4>
               </a>
             </li>
           </ul>
@@ -406,7 +406,7 @@
         <div
           class="container d-flex flex-column align-content-around align-items-center flex-sm-row"
         >
-          <div class="socials-follow col-sm-4">
+          <div class="socials-follow col-sm-3">
             <h3 class="socials-follow__title">Síguenos</h3>
             <ul class="socials-follow__list">
               <li class="socials-follow__item">
@@ -427,7 +427,7 @@
             </ul>
           </div>
           <form
-            class="newsletter-signup col-sm-4 d-flex flex-column flex-sm-row"
+            class="newsletter-signup col-sm-6 d-flex flex-column flex-sm-row"
           >
             <div>
               <label for="user_email" class="newsletter-signup__label"
@@ -458,7 +458,7 @@
             </div>
           </form>
           <!-- TODO: No aconsegueixo centrar la llista de icons -->
-          <ul class="about d-flex flex-column justify-content-end col-sm-4">
+          <ul class="about d-flex flex-column justify-content-end col-sm-3">
             <li class="info-link">
               <a href="#"
                 ><i class="info-link__icon">icon contacto</i>
