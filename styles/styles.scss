@@ -34,6 +34,7 @@ body {
 }
 
 .socials {
+  list-style-type: none;
   &__item {
   }
 }
@@ -235,7 +236,22 @@ body {
 }
 
 .socials-follow {
+  &__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    @media (min-width: 576px) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
   &__title {
+    display: flex;
+    justify-content: center;
+    @media (min-width: 576px) {
+      justify-content: flex-start;
+    }
   }
   &__icon {
   }
@@ -260,6 +276,7 @@ body {
 }
 
 .about {
+  list-style-type: none;
 }
 
 .info-link {
