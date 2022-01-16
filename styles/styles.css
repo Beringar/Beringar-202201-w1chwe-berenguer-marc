@@ -11,13 +11,82 @@ body {
 .primary-menu {
   background-color: #f8f8f8;
 }
+.primary-menu__partners__item--first {
+  background: url(/assets/images/maria-lunarillos.png) #ff5959 bottom center no-repeat;
+}
+.primary-menu__partners__item--second {
+  background: url(/assets/images/cucute.png) #6199af bottom center no-repeat;
+}
+.primary-menu__partners__item--third {
+  background: url(/assets/images/mumuchu.png) #f6b436 bottom center no-repeat;
+}
+
+.login-signup__icon {
+  width: 27px;
+  height: 27px;
+  background: url(/assets/images/sprite.svg) 0 0 no-repeat;
+  background-image: url(/assets/images/sprite.svg);
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  margin: 10px;
+}
 .socials {
   list-style-type: none;
 }
+.socials__item {
+  width: 25px;
+  height: 20px;
+  background-image: url(/assets/images/sprite.svg);
+}
+.socials__item--fb {
+  background-position-x: -4px;
+  background-position-y: -540px;
+  background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+}
+.socials__item--tw {
+  background-position-x: -40px;
+  background-position-y: -540px;
+  background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+}
+.socials__item--ins {
+  background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+  background-position: -75px -540px;
+}
+.socials__item--pin {
+  background: url(../images/sprite.svg) transparent 0 0 no-repeat;
+  background-position-x: -110px;
+  background-position-y: -540px;
+}
+
 .search-icon {
   background-color: #bbb8b6;
 }
 
+.cart-bar__icon {
+  display: block;
+  float: right;
+  width: 50px;
+  height: 50px;
+  background: #ff5959;
+  margin: 0;
+  position: relative;
+  background: #fff url(/assets/images/sprite.svg) -66px 10px no-repeat;
+  background-image: url(/assets/images/sprite.svg);
+  background-position-x: -66px;
+  background-position-y: 10px;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: white;
+}
 .button {
   width: 130px;
   background: #ff5959;
@@ -43,6 +112,36 @@ body {
 }
 .button--col2 {
   background-color: #8e789d;
+}
+
+.search-bar__icon {
+  background: #bbb8b6 url(/assets/images/sprite.svg) -304px 12px no-repeat;
+  background-image: url(/assets/images/sprite.svg);
+  background-position-x: -304px;
+  background-position-y: 12px;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #bbb8b6;
+  cursor: pointer;
+  float: right;
+  width: 50px;
+  height: 50px;
+  text-indent: -99999px;
+}
+
+.content-card__figure {
+  height: 27px;
+  width: 27px;
+}
+.content-card__figure {
+  height: 80px;
+  width: 80px;
+}
+.content-card__figure--menu {
+  width: 80px;
+  height: 80px;
 }
 
 .content-section {
