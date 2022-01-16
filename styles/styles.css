@@ -199,6 +199,9 @@ body {
   align-items: center;
   padding: 40px 0;
 }
+.delivery-grid__item a:hover {
+  color: #ff5959;
+}
 .delivery-grid__item__title {
   font-size: 15px;
   font-weight: 600;
@@ -232,6 +235,18 @@ body {
 .delivery-grid__item__figure--card {
   width: 77px;
   background: url(../assets/images/sprite.svg) -223px -38px no-repeat transparent;
+}
+.delivery-grid__item:hover .delivery-grid__item__figure--truck {
+  background-position: 0 -109px;
+}
+.delivery-grid__item:hover .delivery-grid__item__figure--clock {
+  background-position: -90px -109px;
+}
+.delivery-grid__item:hover .delivery-grid__item__figure--package {
+  background-position: -150px -107px;
+}
+.delivery-grid__item:hover .delivery-grid__item__figure--card {
+  background-position: -223px -109px;
 }
 
 .footer__top {
