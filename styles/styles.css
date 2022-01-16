@@ -1,13 +1,7 @@
-/* background colors
-NOTE: Marc, if a component is not listed here, it has no background-color */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap");
-/* background colors
-NOTE: Marc, if a component is not listed here, it has no background-color */
-/* background colors
-NOTE: Marc, if a component is not listed here, it has no background-color */
 body {
   font: 12px/1.55 "Source Sans Pro", sans-serif;
-  color: #67635f;
+  color: #67625f;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -17,8 +11,6 @@ body {
 .primary-menu {
   background-color: #f8f8f8;
 }
-/* TODO: Marc, he borrado los margins 20px de los elementos de .login-signup.
-ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 .search-icon {
   background-color: #bbb8b6;
 }
@@ -84,6 +76,55 @@ ya le daremos estilos cuando el layout y flex funcione bien Mobile y Desktop */
 
 .delivery-info {
   background-color: #e8e6e5;
+}
+
+.delivery-grid {
+  list-style: none;
+}
+.delivery-grid__item {
+  text-transform: uppercase;
+}
+.delivery-grid__item a {
+  text-decoration: none;
+  color: #67625f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+.delivery-grid__item__title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+.delivery-grid__item__description {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+.delivery-grid__item__figure {
+  margin-bottom: 25px;
+  height: 60px;
+  display: block;
+}
+.delivery-grid__item__figure--truck {
+  width: 85px;
+  background: url(../assets/images/sprite.svg) 0 -38px no-repeat transparent;
+}
+.delivery-grid__item__figure--clock {
+  width: 55px;
+  background: url(../assets/images/sprite.svg) -90px -38px no-repeat transparent;
+}
+.delivery-grid__item__figure--package {
+  width: 68px;
+  background: url(../assets/images/sprite.svg) -150px -36px no-repeat transparent;
+}
+.delivery-grid__item__figure--card {
+  width: 77px;
+  background: url(../assets/images/sprite.svg) -223px -38px no-repeat transparent;
 }
 
 .footer__top {
