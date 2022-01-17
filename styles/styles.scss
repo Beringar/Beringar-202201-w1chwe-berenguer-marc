@@ -577,8 +577,11 @@ body {
   font-size: variables.$text-footer-h3-font-size;
   text-transform: uppercase;
   &__input {
+    width: 100%;
+    height: 30px;
   }
   &__input-privacy-check {
+    text-transform: lowercase;
   }
   &__submit {
     color: white;

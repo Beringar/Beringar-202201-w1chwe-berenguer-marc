@@ -492,14 +492,14 @@
           <form
             class="newsletter-signup col-sm-6 d-flex flex-column flex-sm-row"
           >
-            <div>
+            <div class="d-sm-flex flex-sm-column">
               <label
                 class="d-flex justify-content-center"
                 for="user_email"
                 class="newsletter-signup__label"
                 >Recibe las novedades en tu mail</label
               >
-              <div class="d-flex justify-content-center pt-1 pb-1">
+              <div class="d-flex justify-content-center pt-2 pb-1">
                 <input
                   id="user_email"
                   type="email"
@@ -516,12 +516,20 @@
                   for="privacy-check"
                   class="newsletter-signup__input-privacy-check"
                 >
-                  Acepto la politica de privacidad
+                  <div class="d-flex">
+                    <p class="text-capitalize me-1">Acepto</p>
+                    <p class="me-1">la</p>
+                    <p class="text-decoration-underline">
+                      politica de privacidad
+                    </p>
+                  </div>
                   <!-- TODO: Afegir link -->
                 </label>
               </div>
             </div>
-            <div class="d-flex justify-content-center">
+            <div
+              class="d-flex justify-content-center align-items-sm-center ms-sm-1 mb-sm-4"
+            >
               <input
                 type="submit"
                 value="Suscribete >"
