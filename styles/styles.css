@@ -366,6 +366,14 @@ body {
   line-height: 50px;
 }
 
+.socials-follow {
+  margin-top: 20px;
+}
+@media (min-width: 576px) {
+  .socials-follow {
+    margin-right: 40px;
+  }
+}
 .socials-follow__list {
   display: flex;
   list-style-type: none;
@@ -373,11 +381,13 @@ body {
 }
 @media (min-width: 576px) {
   .socials-follow__list {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
   }
 }
 .socials-follow__title {
+  font-size: 14px;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
 }
@@ -386,18 +396,88 @@ body {
     justify-content: flex-start;
   }
 }
+.socials-follow__item {
+  display: block;
+  width: 34px;
+  height: 32px;
+  background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+}
+.socials-follow__item--fb {
+  background-position-x: -176px;
+  background-position-y: -494px;
+}
+.socials-follow__item--tw {
+  background-position: -35px -494px;
+}
+.socials-follow__item--ins {
+  background-position: -70px -494px;
+}
+.socials-follow__item--pin {
+  background-position: -106px -494px;
+}
+.socials-follow__item--yt {
+  background-position: -176px -494px;
+}
+
 .newsletter-signup {
-  border-top: 1px solid red;
-  padding: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid #67625f;
+  border-bottom: 1px solid #67625f;
+  padding: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 @media (min-width: 576px) {
   .newsletter-signup {
+    margin-top: 30px;
+    margin-bottom: 30px;
     border-top: none;
-    border-left: 1px solid red;
+    border-bottom: none;
+    border-left: 1px solid #67625f;
+    border-right: 1px solid #67625f;
   }
 }
 .about {
   list-style-type: none;
+  margin-bottom: 0;
+}
+
+.info-link a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2e2925;
+  text-decoration: none;
+}
+@media (min-width: 576px) {
+  .info-link a {
+    align-items: flex-start;
+  }
+}
+.info-link__icon {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  display: block;
+  width: 30px;
+  height: 31px;
+  background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+}
+.info-link__icon--contacto {
+  background-position-x: 0px;
+  background-position-y: -207px;
+}
+.info-link__icon--sobre-nosotros {
+  background-position-x: 0px;
+  background-position-y: -246px;
+}
+.info-link__icon--condiciones-venta {
+  background-position-x: 0px;
+  background-position-y: -285px;
+}
+.info-link__text:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */

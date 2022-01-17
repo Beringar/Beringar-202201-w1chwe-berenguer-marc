@@ -433,37 +433,73 @@ body {
 }
 
 .socials-follow {
+  margin-top: 20px;
+  @media (min-width: 576px) {
+    margin-right: 40px;
+  }
+  // margin-right: 60px;
   &__list {
     display: flex;
     list-style-type: none;
     padding: 0;
     @media (min-width: 576px) {
-      flex-direction: column;
+      flex-direction: row;
       justify-content: flex-start;
     }
   }
 
   &__title {
+    font-size: variables.$text-footer-h3-font-size;
+    text-transform: uppercase;
     display: flex;
     justify-content: center;
     @media (min-width: 576px) {
       justify-content: flex-start;
     }
   }
-  &__icon {
+  &__item {
+    display: block;
+    width: 34px;
+    height: 32px;
+    background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+    &--fb {
+      background-position-x: -176px;
+      background-position-y: -494px;
+    }
+    &--tw {
+      background-position: -35px -494px;
+    }
+    &--ins {
+      background-position: -70px -494px;
+    }
+    &--pin {
+      background-position: -106px -494px;
+    }
+    &--yt {
+      background-position: -176px -494px;
+    }
   }
 }
 
 .newsletter-signup {
-  border-top: 1px solid red;
-  padding: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid variables.$default-border-color;
+  border-bottom: 1px solid variables.$default-border-color;
+  padding: 30px;
   @media (min-width: 576px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
     border-top: none;
-    border-left: 1px solid red;
+    border-bottom: none;
+    border-left: 1px solid variables.$default-border-color;
+    border-right: 1px solid variables.$default-border-color;
   }
 
   &__label {
   }
+  font-size: variables.$text-footer-h3-font-size;
+  text-transform: uppercase;
   &__input {
   }
   &__input-privacy-check {
@@ -474,11 +510,46 @@ body {
 
 .about {
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 .info-link {
-  &__icon {
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: variables.$text-headings-color;
+    text-decoration: none;
+    @media (min-width: 576px) {
+      align-items: flex-start;
+    }
   }
+
+  &__icon {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    display: block;
+    width: 30px;
+    height: 31px;
+    background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+    &--contacto {
+      background-position-x: 0px;
+      background-position-y: -207px;
+    }
+    &--sobre-nosotros {
+      background-position-x: 0px;
+      background-position-y: -246px;
+    }
+    &--condiciones-venta {
+      background-position-x: 0px;
+      background-position-y: -285px;
+    }
+  }
+
   &__text {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
