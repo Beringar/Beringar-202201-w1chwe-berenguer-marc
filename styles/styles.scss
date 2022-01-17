@@ -438,7 +438,7 @@ body {
     list-style-type: none;
     padding: 0;
     @media (min-width: 576px) {
-      flex-direction: column;
+      flex-direction: row;
       justify-content: flex-start;
     }
   }
@@ -450,7 +450,27 @@ body {
       justify-content: flex-start;
     }
   }
-  &__icon {
+  &__item {
+    display: block;
+    width: 34px;
+    height: 32px;
+    background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+    &--fb {
+      background-position-x: -176px;
+      background-position-y: -494px;
+    }
+    &--tw {
+      background-position: -35px -494px;
+    }
+    &--ins {
+      background-position: -70px -494px;
+    }
+    &--pin {
+      background-position: -106px -494px;
+    }
+    &--yt {
+      background-position: -176px -494px;
+    }
   }
 }
 

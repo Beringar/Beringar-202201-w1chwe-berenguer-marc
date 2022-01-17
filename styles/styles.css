@@ -373,7 +373,7 @@ body {
 }
 @media (min-width: 576px) {
   .socials-follow__list {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
   }
 }
@@ -386,6 +386,29 @@ body {
     justify-content: flex-start;
   }
 }
+.socials-follow__item {
+  display: block;
+  width: 34px;
+  height: 32px;
+  background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+}
+.socials-follow__item--fb {
+  background-position-x: -176px;
+  background-position-y: -494px;
+}
+.socials-follow__item--tw {
+  background-position: -35px -494px;
+}
+.socials-follow__item--ins {
+  background-position: -70px -494px;
+}
+.socials-follow__item--pin {
+  background-position: -106px -494px;
+}
+.socials-follow__item--yt {
+  background-position: -176px -494px;
+}
+
 .newsletter-signup {
   border-top: 1px solid red;
   padding: 40px;
