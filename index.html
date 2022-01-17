@@ -73,25 +73,32 @@
             <div class="container-search-icon-cart-bar d-flex">
               <a href="#"><i class="search-icon d-sm-none">search icon</i></a>
               <div class="cart-bar d-flex">
-                <a href="#"><i class="cart-bar__icon">cart icon</i></a>
-                <span class="cart-bar__count">cart count</span>
+                <a href="#"><i class="cart-bar__icon"></i></a>
+                <span class="cart-bar__count">4</span>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="secondary-menu">
-        <div class="container d-flex justify-content-between">
-          <div class="logo col-5">
-            <i class="logo__icon"><a href="#">logo icon</a></i>
+        <div
+          class="container d-flex justify-content-center md-justify-content-between"
+        >
+          <div class="logo col-5 col-md-4">
             <a href="#"
               ><img
                 src="/assets/images/logo-small.svg"
                 alt="María Lunarillos logo image"
-                class="logo__img"
-            /></a>
+                class="logo__img logo__img--mobile d-md-none"
+              />
+              <img
+                src="/assets/images/logo.svg"
+                alt="María Lunarillos logo image"
+                class="logo__img logo__img--desktop d-none d-md-block"
+              />
+            </a>
           </div>
-          <div class="content-menu col-7">
+          <div class="content-menu d-none d-md-block col-7 col-md-8">
             <section class="content-menu__top d-flex">
               <a
                 href="#"
@@ -148,7 +155,7 @@
               <li class="content-card">
                 <a href="">
                   <img
-                    class="content-card__figure"
+                    class="content-card__figure content-card__figure--brands"
                     src="/assets/images/delantal.png"
                     alt="marcas img"
                   />

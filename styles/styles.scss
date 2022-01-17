@@ -17,7 +17,13 @@ body {
 }
 
 .primary-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
   background-color: variables.$background-color-light;
+  z-index: 100;
   &__toogle {
   }
   &__partners {
@@ -112,12 +118,17 @@ body {
 }
 
 .secondary-menu {
+  margin-top: 50px;
 }
 
 .logo {
   &__icon {
   }
   &__img {
+    width: 100%;
+    &--desktop {
+      max-width: 250px;
+    }
   }
 }
 
@@ -128,9 +139,11 @@ body {
 }
 
 .button {
-  width: 130px;
+  text-align: center;
+  font-size: 18px;
   background: variables.$accent-color;
   padding: 15px 30px;
+  margin-top: 50px;
   display: inline-block;
   color: #ffffff;
   text-transform: uppercase;
@@ -145,6 +158,7 @@ body {
     text-decoration: none;
     line-height: 30px;
     text-align: center;
+    margin: 0;
   }
   &--col1 {
     background-color: variables.$color1;
@@ -183,17 +197,30 @@ body {
 }
 
 .content-card {
-  padding: 0 5px 0 0;
   width: 80px;
-  height: 80px;
+  height: 100px;
+  margin-left: 5px;
   background-color: variables.$background-menu-card;
-  padding: 0;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: flex-end;
+    text-decoration: none;
+  }
   &__figure {
     width: 50%;
+    padding-bottom: 13px;
+
+    &--brands {
+      width: 70%;
+    }
 
     &--blog {
       width: 80px;
-      height: 80px;
+      height: 100px;
       display: block;
       background-repeat: no-repeat;
       background-image: url(../assets/images/menu.svg);
@@ -202,12 +229,20 @@ body {
     }
   }
   &__title {
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1px;
-    color: variables.$dark-border-color;
+    color: #2e2925;
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
+    margin: 0;
+    padding-top: 8px;
+    background-color: white;
+    width: 100%;
+  }
+  &--blog {
+    margin-left: 35px;
+    background-color: variables.$accent-color;
   }
 }
 
@@ -216,16 +251,22 @@ body {
 
 .content-section {
   background-color: variables.$background-color-light;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 110px;
+    margin-bottom: 60px;
+  }
+
   &__icon {
   }
   &__title {
     display: inline-block;
     padding: 20px 60px;
     text-transform: uppercase;
-    margin-bottom: 0;
+    margin-bottom: 65px;
     line-height: 22px;
     font-size: 22px;
     font-weight: 900;
@@ -254,26 +295,36 @@ body {
 }
 
 .item {
+  a {
+    text-decoration: none;
+    color: variables.$text-headings-color;
+  }
   &__img {
     width: 100%;
   }
   &__text {
-    &__title {
-    }
-    &__description {
-    }
   }
+
+  &__title {
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   &--top {
     grid-area: top;
-    background-color: red;
   }
   &--bottom {
     grid-area: bottom;
-    background-color: lime;
   }
   &--aside {
     grid-area: aside;
-    background-color: cyan;
   }
 }
 
