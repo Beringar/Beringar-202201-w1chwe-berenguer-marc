@@ -120,6 +120,10 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+.button--view-more:hover {
+  text-decoration: underline;
+  color: white;
+}
 .button--content-menu {
   width: 130px;
   padding: 0 8px 0 0;
@@ -242,18 +246,77 @@ body {
 }
 .content-grid--showcase {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "top top aside" "bottom bottom aside";
   gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "top" "bottom" "aside";
+}
+@media (min-width: 768px) {
+  .content-grid--showcase {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "top top aside" "bottom bottom aside";
+  }
 }
 
+.item {
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .item {
+    height: auto;
+    width: 100%;
+  }
+}
 .item a {
   text-decoration: none;
   color: #2e2925;
 }
-.item__img {
-  width: 100%;
+@media (min-width: 768px) {
+  .item__img {
+    width: 100%;
+  }
+}
+.item__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px 20px 0 20px;
+  width: 250px;
+  height: 80px;
+}
+@media (min-width: 768px) {
+  .item__text {
+    width: 250px;
+    height: 150px;
+  }
+}
+.item__text::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid rgba(255, 255, 255, 0.8);
+  border-right: 60px solid transparent;
+  position: absolute;
+  right: -60px;
+  top: 0;
+}
+@media (min-width: 768px) {
+  .item__text::after {
+    right: -100px;
+    border-bottom: 150px solid rgba(255, 255, 255, 0.8);
+    border-right: 100px solid transparent;
+  }
+}
+.item__text a {
+  color: #67625f;
+}
+.item__text a:hover {
+  text-decoration: underline;
 }
 .item__title {
   font-size: 18px;
@@ -262,17 +325,39 @@ body {
   font-weight: 700;
 }
 .item__description {
-  font-size: 14px;
-  line-height: 16px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .item__description {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 .item--top {
   grid-area: top;
+}
+.item--top .item__text {
+  left: 0;
+}
+@media (min-width: 768px) {
+  .item--top .item__text {
+    left: calc(100% - 350px);
+  }
 }
 .item--bottom {
   grid-area: bottom;
 }
 .item--aside {
   grid-area: aside;
+}
+@media (min-width: 768px) {
+  .item--aside .item__text {
+    width: calc(100% - 100px);
+  }
+}
+.item--aside img {
+  width: 100%;
 }
 
 .brand {

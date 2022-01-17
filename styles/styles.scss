@@ -150,6 +150,12 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
   cursor: pointer;
+  &--view-more {
+    &:hover {
+      text-decoration: underline;
+      color: white;
+    }
+  }
   &--content-menu {
     width: 130px;
     padding: 0 8px 0 0;
@@ -285,24 +291,74 @@ body {
   }
   &--showcase {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "top top aside"
-      "bottom bottom aside";
     gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "top"
+      "bottom"
+      "aside";
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "top top aside"
+        "bottom bottom aside";
+    }
   }
 }
 
 .item {
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+  @media (min-width: 768px) {
+    height: auto;
+    width: 100%;
+  }
   a {
     text-decoration: none;
     color: variables.$text-headings-color;
   }
   &__img {
-    width: 100%;
+    @media (min-width: 768px) {
+      width: 100%;
+    }
   }
   &__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 20px 0 20px;
+    width: 250px;
+    height: 80px;
+    @media (min-width: 768px) {
+      width: 250px;
+      height: 150px;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-bottom: 80px solid rgba(255, 255, 255, 0.8);
+      border-right: 60px solid transparent;
+      position: absolute;
+      right: -60px;
+      top: 0;
+      @media (min-width: 768px) {
+        right: -100px;
+        border-bottom: 150px solid rgba(255, 255, 255, 0.8);
+        border-right: 100px solid transparent;
+      }
+    }
+    a {
+      color: variables.$default-text-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__title {
@@ -313,18 +369,38 @@ body {
   }
 
   &__description {
-    font-size: 14px;
-    line-height: 16px;
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 
   &--top {
     grid-area: top;
+    .item__text {
+      left: 0;
+      @media (min-width: 768px) {
+        left: calc(100% - 350px);
+      }
+    }
   }
   &--bottom {
     grid-area: bottom;
+    .item__text {
+    }
   }
   &--aside {
     grid-area: aside;
+    .item__text {
+      @media (min-width: 768px) {
+        width: calc(100% - 100px);
+      }
+    }
+    img {
+      width: 100%;
+    }
   }
 }
 
