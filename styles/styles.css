@@ -9,7 +9,13 @@ body {
 }
 
 .primary-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
   background-color: #f8f8f8;
+  z-index: 100;
 }
 .primary-menu__partners__item--first {
   background: url(../assets/images/maria-lunarillos.png) #ff5959 bottom center no-repeat;
@@ -84,6 +90,17 @@ body {
   background-clip: initial;
   background-color: white;
 }
+.secondary-menu {
+  margin-top: 50px;
+}
+
+.logo__img {
+  width: 100%;
+}
+.logo__img--desktop {
+  max-width: 250px;
+}
+
 .content-menu {
   display: flex;
   flex-direction: column;
@@ -91,9 +108,11 @@ body {
 }
 
 .button {
-  width: 130px;
+  text-align: center;
+  font-size: 18px;
   background: #ff5959;
   padding: 15px 30px;
+  margin-top: 50px;
   display: inline-block;
   color: #ffffff;
   text-transform: uppercase;
@@ -109,6 +128,7 @@ body {
   text-decoration: none;
   line-height: 30px;
   text-align: center;
+  margin: 0;
 }
 .button--col1 {
   background-color: #9faa4d;
@@ -142,18 +162,29 @@ body {
 }
 
 .content-card {
-  padding: 0 5px 0 0;
   width: 80px;
-  height: 80px;
+  height: 100px;
+  margin-left: 5px;
   background-color: #f2f2f2;
-  padding: 0;
+}
+.content-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  justify-content: flex-end;
+  text-decoration: none;
 }
 .content-card__figure {
   width: 50%;
+  padding-bottom: 13px;
+}
+.content-card__figure--brands {
+  width: 70%;
 }
 .content-card__figure--blog {
   width: 80px;
-  height: 80px;
+  height: 100px;
   display: block;
   background-repeat: no-repeat;
   background-image: url(../assets/images/menu.svg);
@@ -161,25 +192,38 @@ body {
   background-size: 560px;
 }
 .content-card__title {
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 1px;
   color: #2e2925;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 8px;
+  background-color: white;
+  width: 100%;
+}
+.content-card--blog {
+  margin-left: 35px;
+  background-color: #ff5959;
 }
 
 .content-section {
   background-color: #f8f8f8;
+}
+.content-section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  padding-top: 110px;
+  margin-bottom: 60px;
 }
 .content-section__title {
   display: inline-block;
   padding: 20px 60px;
   text-transform: uppercase;
-  margin-bottom: 0;
+  margin-bottom: 65px;
   line-height: 22px;
   font-size: 22px;
   font-weight: 900;
@@ -204,20 +248,31 @@ body {
   gap: 15px;
 }
 
+.item a {
+  text-decoration: none;
+  color: #2e2925;
+}
 .item__img {
   width: 100%;
 }
+.item__title {
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.item__description {
+  font-size: 14px;
+  line-height: 16px;
+}
 .item--top {
   grid-area: top;
-  background-color: red;
 }
 .item--bottom {
   grid-area: bottom;
-  background-color: lime;
 }
 .item--aside {
   grid-area: aside;
-  background-color: cyan;
 }
 
 .brand {
