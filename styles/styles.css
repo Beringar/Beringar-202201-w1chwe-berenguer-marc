@@ -440,6 +440,44 @@ body {
 }
 .about {
   list-style-type: none;
+  margin-bottom: 0;
+}
+
+.info-link a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2e2925;
+  text-decoration: none;
+}
+@media (min-width: 576px) {
+  .info-link a {
+    align-items: flex-start;
+  }
+}
+.info-link__icon {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  display: block;
+  width: 30px;
+  height: 31px;
+  background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
+}
+.info-link__icon--contacto {
+  background-position-x: 0px;
+  background-position-y: -207px;
+}
+.info-link__icon--sobre-nosotros {
+  background-position-x: 0px;
+  background-position-y: -246px;
+}
+.info-link__icon--condiciones-venta {
+  background-position-x: 0px;
+  background-position-y: -285px;
+}
+.info-link__text:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
