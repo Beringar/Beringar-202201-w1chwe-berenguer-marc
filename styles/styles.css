@@ -366,6 +366,14 @@ body {
   line-height: 50px;
 }
 
+.socials-follow {
+  margin-top: 20px;
+}
+@media (min-width: 576px) {
+  .socials-follow {
+    margin-right: 40px;
+  }
+}
 .socials-follow__list {
   display: flex;
   list-style-type: none;
@@ -378,6 +386,8 @@ body {
   }
 }
 .socials-follow__title {
+  font-size: 14px;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
 }
@@ -410,13 +420,22 @@ body {
 }
 
 .newsletter-signup {
-  border-top: 1px solid red;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid #67625f;
+  border-bottom: 1px solid #67625f;
   padding: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 @media (min-width: 576px) {
   .newsletter-signup {
+    margin-top: 30px;
+    margin-bottom: 30px;
     border-top: none;
-    border-left: 1px solid red;
+    border-bottom: none;
+    border-left: 1px solid #67625f;
+    border-right: 1px solid #67625f;
   }
 }
 .about {
