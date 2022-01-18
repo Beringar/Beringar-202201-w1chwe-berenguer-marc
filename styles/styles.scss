@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+}
+
 .header {
 }
 
@@ -27,49 +31,89 @@ body {
   &__toogle {
   }
   &__partners {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
     &__item {
+      height: 65px;
+      width: 65px;
+      display: flex;
+      margin-right: 2px;
+      transition: all 0.6s ease-in-out;
       &--first {
+        height: 100px;
         background: url(../assets/images/maria-lunarillos.png) #ff5959 bottom
           center no-repeat;
+        padding: 0 30px;
       }
       &--second {
+        padding: 0 30px;
         background: url(../assets/images/cucute.png) #6199af bottom center
           no-repeat;
+        &:hover {
+          height: 100px;
+          transition: all 0.6s ease-in-out;
+        }
       }
       &--third {
+        padding: 0 30px;
         background: url(../assets/images/mumuchu.png) #f6b436 bottom center
           no-repeat;
+        &:hover {
+          height: 100px;
+          transition: all 0.6s ease-in-out;
+        }
       }
     }
   }
 }
 
+.top-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 576px) {
+    justify-content: flex-end;
+  }
+}
+
 .login-signup {
+  display: flex;
+  align-items: center;
+  padding-right: 28px;
   &__icon {
     width: 27px;
     height: 27px;
     background: url(../assets/images/sprite.svg) 0 0 no-repeat;
-    background-image: url(../assets/images/sprite.svg);
-    background-position-x: 0px;
-    background-position-y: 0px;
-    background-size: initial;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
     margin: 10px;
+    line-height: 46px;
+    &:hover {
+      background-position: -37px 0;
+    }
   }
   &__text {
+    text-transform: uppercase;
+    color: variables.$dark-border-color;
+    &:hover {
+      color: variables.$accent-color;
+    }
   }
 }
 
 .socials {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  align-items: center;
   &__item {
     width: 25px;
     height: 20px;
-    margin: 15px 7px 0;
+    margin: 0 4px;
     background: url(../assets/images/sprite.svg) transparent 0 0 no-repeat;
     display: block;
     &--fb {
@@ -97,10 +141,8 @@ body {
 .cart-bar {
   &__icon {
     display: block;
-    float: right;
     width: 50px;
     height: 50px;
-    background: #ff5959;
     margin: 0;
     position: relative;
     background: #fff url(../assets/images/sprite.svg) -66px 10px no-repeat;
@@ -112,8 +154,19 @@ body {
     background-origin: initial;
     background-clip: initial;
     background-color: rgb(255, 255, 255);
+    &:hover {
+      background-color: variables.$accent-color;
+      background-position-x: -105px;
+    }
   }
   &__count {
+    width: 50px;
+    height: 50px;
+    background: variables.$accent-color;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
   }
 }
 
@@ -127,7 +180,11 @@ body {
   &__img {
     width: 100%;
     &--desktop {
+      margin-top: 70px;
       max-width: 250px;
+    }
+    &--mobile {
+      padding-top: 30px;
     }
   }
 }
@@ -136,6 +193,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding-top: 40px;
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .button {
@@ -157,49 +219,69 @@ body {
     }
   }
   &--content-menu {
-    width: 130px;
-    padding: 0 8px 0 0;
     font-size: 15px;
-    font-weight: 600;
     text-decoration: none;
-    line-height: 30px;
+    line-height: 35px;
     text-align: center;
-    margin: 0;
+    padding-right: 8px;
+    font-weight: 600;
+    width: auto;
+    padding: 0 8px 0 8px;
+    margin: 0 8px 0 8px;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
   }
   &--col1 {
     background-color: variables.$color1;
   }
   &--col2 {
+    margin-left: 0;
     background-color: variables.$color2;
   }
 }
 
 .search-bar {
   &__input {
+    width: 250px;
+    height: 35px;
+    border: 1px solid #bbb8b6;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 0 5px;
+    color: #bbb8b6;
   }
   &__icon {
     background: #bbb8b6 url(../assets/images/sprite.svg) -304px 12px no-repeat;
     background-image: url(../assets/images/sprite.svg);
     background-position-x: -304px;
-    background-position-y: 12px;
+    background-position-y: 6px;
     background-size: initial;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: rgb(187, 184, 182);
+    background-color: #bbb8b6;
     cursor: pointer;
     float: right;
     width: 50px;
-    height: 50px;
-    text-indent: -99999px;
+    height: 35px;
+    &--top {
+      background-position-y: 14px;
+      height: 50px;
+    }
+    &:hover {
+      background-color: variables.$accent-color;
+    }
   }
 }
 
 .content-menu__cards {
   list-style: none;
-  margin: 0;
+  margin-top: 24px;
   padding: 0;
   display: flex;
+  justify-content: flex-end;
 }
 
 .content-card {
@@ -207,6 +289,9 @@ body {
   height: 100px;
   margin-left: 5px;
   background-color: variables.$background-menu-card;
+  &:hover {
+    background-color: variables.$accent-color;
+  }
 
   a {
     display: flex;
@@ -249,6 +334,9 @@ body {
   &--blog {
     margin-left: 35px;
     background-color: variables.$accent-color;
+    &:hover {
+      background-color: variables.$background-menu-card;
+    }
   }
 }
 
@@ -262,16 +350,30 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 110px;
-    margin-bottom: 60px;
+    margin-bottom: 0;
+  }
+
+  &--parties {
+    margin-top: 100px;
+  }
+
+  &--brands {
+    background-color: white;
+    .container {
+      margin-bottom: 150px;
+    }
   }
 
   &__icon {
+    height: 110px;
+    position: absolute;
+    top: -64px;
   }
   &__title {
     display: inline-block;
     padding: 20px 60px;
     text-transform: uppercase;
+    margin-top: 90px;
     margin-bottom: 65px;
     line-height: 22px;
     font-size: 22px;
@@ -419,6 +521,10 @@ body {
 
 .delivery-grid {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 
   &__item {
     text-transform: uppercase;
@@ -505,19 +611,16 @@ body {
     height: 50px;
     font-size: 14px;
     line-height: 50px;
+    margin: 0;
   }
 }
 
 .socials-follow {
-  margin-top: 20px;
-  @media (min-width: 576px) {
-    margin-right: 40px;
-  }
-  // margin-right: 60px;
   &__list {
     display: flex;
     list-style-type: none;
     padding: 0;
+    margin: 0;
     @media (min-width: 576px) {
       flex-direction: row;
       justify-content: flex-start;
@@ -558,14 +661,12 @@ body {
 }
 
 .newsletter-signup {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 20px;
   border-top: 1px solid variables.$default-border-color;
   border-bottom: 1px solid variables.$default-border-color;
-  padding: 30px;
   @media (min-width: 576px) {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-top: none;
     border-bottom: none;
     border-left: 1px solid variables.$default-border-color;

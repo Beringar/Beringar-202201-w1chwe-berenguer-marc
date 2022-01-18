@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,44 +14,34 @@
   <body>
     <header class="header">
       <section class="primary-menu">
-        <div class="container d-sm-flex">
-          <div class="col-sm-6 d-none d-sm-flex justify-content-between">
+        <div class="container d-flex justify-content-between">
+          <div class="d-none d-md-block">
             <ul class="primary-menu__partners">
               <li class="primary-menu__partners__item">
-                <a class="primary-menu__partners__item--first" href="#"
-                  >ML red link</a
-                >
+                <a class="primary-menu__partners__item--first" href="#"></a>
               </li>
               <li class="primary-menu__partners__item">
-                <a class="primary-menu__partners__item--second" href="#"
-                  >CT blue link</a
-                >
+                <a class="primary-menu__partners__item--second" href="#"></a>
               </li>
               <li class="primary-menu__partners__item">
-                <a class="primary-menu__partners__item--third" href="#"
-                  >MC yellow link</a
-                >
+                <a class="primary-menu__partners__item--third" href="#"></a>
               </li>
             </ul>
-            <div class="login-signup">
-              <a href="#">
-                <i class="login-signup__icon">login/signup ICON</i>
-                <p class="login-signup__text">Entra | regístrate</p>
-              </a>
-            </div>
           </div>
-          <div class="d-flex justify-content-between col col-sm-6">
-            <div class="d-flex container-toggle-sign-up">
-              <div class="primary-menu__toggle d-sm-none">
-                MENU TOGGLE BURGER
-              </div>
-              <div class="login-signup">
-                <a href="#">
-                  <i class="login-signup__icon">LOGIN ICON</i>
-                </a>
-              </div>
+          <div class="top-menu">
+            <img
+              class="primary-menu__toggle d-md-none"
+              src="assets/images/menutoggle.png"
+              alt="menu toggle image"
+            />
+            <div class="login-signup">
+              <i class="login-signup__icon"></i>
+              <p class="login-signup__text d-none d-sm-block">
+                Entra | regístrate
+              </p>
             </div>
             <ul class="socials d-none d-sm-flex">
+
               <li>
                 <a class="socials__item socials__item--fb" href="#"></a>
               </li>
@@ -68,12 +58,12 @@
                 <a class="socials__item socials__item--yt" href="#"></a>
               </li>
             </ul>
-            <div class="container-search-icon-cart-bar d-flex">
-              <a href="#"><i class="search-icon d-sm-none">search icon</i></a>
-              <div class="cart-bar d-flex">
-                <a href="#"><i class="cart-bar__icon"></i></a>
-                <span class="cart-bar__count">4</span>
-              </div>
+            <a href="#"
+              ><i class="search-bar__icon search-bar__icon--top d-sm-none"></i
+            ></a>
+            <div class="cart-bar d-flex">
+              <a href="#"><i class="cart-bar__icon"></i></a>
+              <span class="cart-bar__count">4</span>
             </div>
           </div>
         </div>
@@ -97,7 +87,7 @@
             </a>
           </div>
           <div class="content-menu d-none d-md-block col-7 col-md-8">
-            <section class="content-menu__top d-flex">
+            <section class="content-menu__top">
               <a
                 href="#"
                 role="button"
@@ -113,8 +103,12 @@
                 Ofertas
               </a>
               <div class="search-bar">
-                <input type="text" class="search-bar__input" />
-                <a href="#"><i class="search-bar__icon">search icon</i></a>
+                <input
+                  type="text"
+                  placeholder="¿QUÉ ESTÁS BUSCANDO...?"
+                  class="search-bar__input"
+                />
+                <a href="#"><i class="search-bar__icon"></i></a>
               </div>
             </section>
             <ul class="content-menu__cards">
@@ -175,9 +169,13 @@
       </section>
     </header>
     <main class="main">
-      <section class="content-section">
+      <section class="content-section content-section--parties">
         <div class="container">
-          <i class="content-section__icon">Fiestas icon</i>
+          <img
+            class="content-section__icon"
+            src="assets/images/tarta-cumpleanos.png"
+            alt="Tarta de cumpleaños"
+          />
           <h2 class="content-section__title">Fiestas</h2>
           <div class="content-grid content-grid--showcase">
             <article class="item item--top">
@@ -228,7 +226,9 @@
           <a href="#" role="button" class="button button--view-more">Ver más</a>
         </div>
       </section>
-      <section class="content-section d-none d-sm-flex flex-column">
+      <section
+        class="content-section content-section--brands d-none d-sm-flex flex-column"
+      >
         <div class="container">
           <h2 class="content-section__title">Nuestras marcas</h2>
           <div class="content-grid content-grid--flex-wrap">
@@ -402,7 +402,7 @@
       </section>
       <section class="delivery-info">
         <div class="container">
-          <ul class="delivery-grid row mb-0">
+          <ul class="delivery-grid">
             <li class="delivery-grid__item col-6 col-sm-3">
               <a href="#">
                 <figure
