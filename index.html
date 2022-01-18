@@ -40,7 +40,8 @@
                 Entra | regístrate
               </p>
             </div>
-            <ul class="socials d-sm-flex d-none">
+            <ul class="socials d-none d-sm-flex">
+
               <li>
                 <a class="socials__item socials__item--fb" href="#"></a>
               </li>
@@ -491,16 +492,21 @@
           <form
             class="newsletter-signup col-sm-6 d-flex flex-column flex-sm-row"
           >
-            <div>
-              <label for="user_email" class="newsletter-signup__label"
+            <div class="d-sm-flex flex-sm-column">
+              <label
+                class="d-flex justify-content-center"
+                for="user_email"
+                class="newsletter-signup__label"
                 >Recibe las novedades en tu mail</label
               >
-              <input
-                id="user_email"
-                type="email"
-                class="newsletter-signup__input"
-              />
-              <div>
+              <div class="d-flex justify-content-center pt-2 pb-1">
+                <input
+                  id="user_email"
+                  type="email"
+                  class="newsletter-signup__input"
+                />
+              </div>
+              <div class="pt-1 pb-1">
                 <input
                   type="checkbox"
                   id="privacy-check"
@@ -510,13 +516,25 @@
                   for="privacy-check"
                   class="newsletter-signup__input-privacy-check"
                 >
-                  Acepto la politica de privacidad
+                  <div class="d-flex">
+                    <p class="text-capitalize me-1">Acepto</p>
+                    <p class="me-1">la</p>
+                    <p class="text-decoration-underline">
+                      politica de privacidad
+                    </p>
+                  </div>
                   <!-- TODO: Afegir link -->
                 </label>
               </div>
             </div>
-            <div>
-              <input type="submit" class="newsletter-signup__submit" />
+            <div
+              class="d-flex justify-content-center align-items-sm-center ms-sm-1 mb-sm-4"
+            >
+              <input
+                type="submit"
+                value="Suscribete >"
+                class="newsletter-signup__submit"
+              />
             </div>
           </form>
           <ul
