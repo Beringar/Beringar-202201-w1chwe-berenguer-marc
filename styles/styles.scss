@@ -98,6 +98,8 @@ p {
   }
   &__text {
     text-transform: uppercase;
+    font-size: 12px;
+    margin: 0;
     color: variables.$dark-border-color;
     &:hover {
       color: variables.$accent-color;
@@ -600,6 +602,7 @@ p {
 
 .footer {
   &__top {
+    padding: 40px 0 40px 0;
     background-color: variables.$background-color-light;
   }
   &__bottom {
@@ -621,8 +624,8 @@ p {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    @media (min-width: 576px) {
-      flex-direction: row;
+    justify-content: center;
+    @media (min-width: 768px) {
       justify-content: flex-start;
     }
   }
@@ -632,7 +635,7 @@ p {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       justify-content: flex-start;
     }
   }
@@ -661,10 +664,12 @@ p {
 }
 
 .newsletter-signup {
+  text-align: center;
   padding: 20px;
   border-top: 1px solid variables.$default-border-color;
   border-bottom: 1px solid variables.$default-border-color;
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
+    text-align: left;
     padding-top: 30px;
     padding-bottom: 30px;
     border-top: none;
@@ -682,33 +687,43 @@ p {
   &__input-privacy-check {
   }
   &__submit {
+    background-color: variables.$accent-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    font-size: 14px;
+    color: white;
   }
 }
 
 .about {
   list-style-type: none;
-  margin-bottom: 0;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.newsletter-new {
+  text-align: right;
 }
 
 .info-link {
+  margin-bottom: 10px;
   a {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: variables.$text-headings-color;
     text-decoration: none;
-    @media (min-width: 576px) {
-      align-items: flex-start;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
     }
   }
 
   &__icon {
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    display: block;
-    width: 30px;
+    width: 42px;
     height: 31px;
+    margin-right: 10px;
     background: url(/assets/images/sprite.svg) transparent 0 0 no-repeat;
     &--contacto {
       background-position-x: 0px;
@@ -725,6 +740,18 @@ p {
   }
 
   &__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 31px;
+    color: variables.$accent-color;
+    padding: 0;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      padding-left: 10px;
+      text-align: left;
+    }
+
     &:hover {
       text-decoration: underline;
     }

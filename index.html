@@ -36,9 +36,9 @@
             />
             <div class="login-signup">
               <i class="login-signup__icon"></i>
-              <p class="login-signup__text d-none d-sm-block">
+              <h2 class="login-signup__text d-none d-sm-block">
                 Entra | regístrate
-              </p>
+              </h2>
             </div>
             <ul class="socials d-none d-sm-flex">
               <li>
@@ -449,9 +449,9 @@
     <footer class="footer">
       <section class="footer__top">
         <div
-          class="container d-flex flex-column align-content-around align-items-center flex-sm-row"
+          class="container d-flex flex-column align-content-around align-items-center flex-md-row"
         >
-          <div class="socials-follow col-sm-3">
+          <div class="socials-follow col-12 col-md-3">
             <h3 class="socials-follow__title">Síguenos</h3>
             <ul class="socials-follow__list">
               <li>
@@ -486,18 +486,12 @@
               </li>
             </ul>
           </div>
-          <form
-            class="newsletter-signup col-sm-6 d-flex flex-column flex-sm-row"
-          >
-            <div class="d-sm-flex flex-sm-column">
-              <label
-                class="d-flex justify-content-center"
-                for="user_email"
-                class="newsletter-signup__label"
-              >
-                Recibe las novedades en tu mail</label
-              >
-              <div class="d-flex justify-content-center pt-2 pb-1">
+          <form class="newsletter-signup col-12 col-md-6">
+            <label for="user_email" class="newsletter-signup__label">
+              Recibe las novedades en tu mail</label
+            >
+            <div class="d-flex flex-column flex-sm-row">
+              <div class="col-12 col-md-8">
                 <input
                   id="user_email"
                   type="email"
@@ -508,27 +502,17 @@
                   <input
                     type="checkbox"
                     id="privacy-check"
-                    class="newsletter-signup__input-privacy-check"
+                    class="newsletter-signup__input__cb"
                   />
-                  <label
-                    for="privacy-check"
-                    class="newsletter-signup__input-privacy-check"
-                  >
-                    <div class="d-flex">
-                      <p class="text-capitalize me-1">Acepto</p>
-                      <p class="me-1">la</p>
-                      <p class="text-decoration-underline">
-                        politica de privacidad
-                      </p>
-                    </div>
-                    Acepto la politica de privacidad
-                    <!-- TODO: Afegir link -->
+                  <label for="privacy-check" class="newsletter-signup__label">
+                    Acepto la
+                    <span class="newsletter-signup__label--underline"
+                      >politica de privacidad</span
+                    >
                   </label>
                 </div>
               </div>
-              <div
-                class="d-flex justify-content-center align-items-sm-center ms-sm-1 mb-sm-4"
-              >
+              <div class="newsletter-new col-12 col-md-3">
                 <input
                   type="submit"
                   value="Suscribete >"
@@ -537,9 +521,7 @@
               </div>
             </div>
           </form>
-          <ul
-            class="about d-flex flex-column justify-content-center ps-0 pt-3 ps-sm-0 col-sm-3"
-          >
+          <ul class="about col-sm-3">
             <li class="info-link">
               <a href="#"
                 ><i class="info-link__icon info-link__icon--contacto"></i>
